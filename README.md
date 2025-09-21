@@ -2,9 +2,9 @@
 
 ---
 
-# 📷 Photo Library Application
+# Photo Library Application
 
-## 🚀 Overview
+## Overview
 
 This is a **Photo Library Application** built with:
 
@@ -22,7 +22,7 @@ The app allows users to:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 photo-library-backend/
@@ -37,9 +37,9 @@ photo-library-backend/
 
 ---
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
-### 1️⃣ Backend Setup
+### Backend Setup
 
 ```bash
 # Create virtual environment
@@ -57,7 +57,7 @@ Backend will run at: **[http://localhost:5000](http://localhost:5000)**
 
 ---
 
-### 2️⃣ API Endpoints
+### API Endpoints
 
 | Method | Endpoint                       | Description                     |
 | ------ | ------------------------------ | ------------------------------- |
@@ -72,7 +72,7 @@ Backend will run at: **[http://localhost:5000](http://localhost:5000)**
 
 ---
 
-## 📊 Database Schema
+## Database Schema
 
 Database: **SQLite (`photos.db`)**
 
@@ -91,14 +91,14 @@ Database: **SQLite (`photos.db`)**
 
 ---
 
-## 🤖 AI Prompts and Models
+## AI Prompts and Models
 
 * No AI prompts or models are included.
 * If AI functionality is added later, provide model files or prompt sets separately.
 
 ---
 
-## ✅ Deliverables
+## Deliverables
 
 1. **Complete Source Code** – Flask backend (`app.py`, `models.py`, etc.)
 2. **Database Schema** – SQLite schema (`photos.db`, `view_db.py`)
