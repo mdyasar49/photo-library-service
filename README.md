@@ -9,7 +9,7 @@
 This is a **Photo Library Application** built with:
 
 * **Backend:** Python (Flask + SQLAlchemy + SQLite)
-* **Frontend:** (can be React/Vue/Flutter – not included in this repo, but API-ready)
+* **Frontend:** React (Axios + Material-ui + ESlint)
 * **Database:** SQLite (`photos.db`)
 
 The app allows users to:
@@ -91,9 +91,10 @@ Database: **SQLite (`photos.db`)**
 
 ---
 
-## 🤖 AI Prompts & Models (Optional)
+## 🤖 AI Prompts and Models
 
-Currently, this project does **not include AI features**.
+* No AI prompts or models are included.
+* If AI functionality is added later, provide model files or prompt sets separately.
 
 ---
 
@@ -101,6 +102,6 @@ Currently, this project does **not include AI features**.
 
 1. **Complete Source Code** – Flask backend (`app.py`, `models.py`, etc.)
 2. **Database Schema** – SQLite schema (`photos.db`, `view_db.py`)
-3. **AI Prompts/Models (if applicable)** – Optional placeholder provided
+3. **AI Prompts/Models (if applicable)** – No AI prompts or models are included.
 
 ---
