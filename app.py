@@ -131,6 +131,19 @@ def search_photos():
     ).order_by(Photo.uploaded_at.desc()).all()
     return jsonify([r.to_dict() for r in results])
 
+@app.route('/api/photos/directory/<path:directory_name>', methods=['DELETE'])
+def delete_directory(directory_name):
+    photos = Photo.query.filter_by(directory=directory_name).all()
+    for p in photos:
+        try:
+            if os.path.exists(p.filepath):
+                os.remove(p.filepath)
+        except Exception:
+            pass
+        db.session.delete(p)
+    db.session.commit()
+    return jsonify({"message": f"All photos in '{directory_name}' deleted."}), 204
+
 # ------------------- Main -------------------
 if __name__ == '__main__':
     app.run(debug=True)
