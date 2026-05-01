@@ -1,6 +1,0 @@
-venv/
-__pycache__/
-photos.db
-uploads/
-.env
-bytecode_storage/
