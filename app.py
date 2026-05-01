@@ -133,7 +133,11 @@ def search_photos():
 
 @app.route('/api/photos/directory/<path:directory_name>', methods=['DELETE'])
 def delete_directory(directory_name):
-    photos = Photo.query.filter_by(directory=directory_name).all()
+    if directory_name.lower() == 'others':
+        photos = Photo.query.filter((Photo.directory == 'others') | (Photo.directory == '') | (Photo.directory == None)).all()
+    else:
+        photos = Photo.query.filter_by(directory=directory_name).all()
+        
     for p in photos:
         try:
             if os.path.exists(p.filepath):
