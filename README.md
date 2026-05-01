@@ -1,55 +1,29 @@
-# 📸 Photo Library API - Version 2.0
+# 📸 Bytecode Photo Library - Backend (Service)
 
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
+This is the backend service for the Bytecode Photo Library. It manages bytecode-secured storage, metadata in SQLite, and dynamic reconstruction of assets.
 
-A high-performance, asynchronous photo management backend designed for the V2.0 Photo Library ecosystem. Built with a focus on speed, scalability, and ease of use.
+## 🌿 Version Directory
+This repository is organized into the following branches:
 
-## 🚀 Key Features
-- **⚡ Asynchronous Architecture**: Leveraging FastAPI for non-blocking I/O and rapid response times.
-- **📁 Smart Directory Management**: Organize photos into virtual directories with bulk-delete capabilities.
-- **🔍 Advanced Search**: Instant filtering across tags, descriptions, filenames, and directories.
-- **🛠️ Automated Documentation**: Interactive Swagger (OpenAPI) and Redoc UI available out of the box.
-- **🖼️ Static Asset Streaming**: Efficiently serves high-resolution images via dedicated streaming endpoints.
+### 🚀 [version-3 (Current)](https://github.com/mdyasar49/photo-library-service/tree/version-3)
+**"Bytecode Shield" Edition**
+- Advanced hex-encoded storage engine.
+- Directory-based synchronization logic.
+- ZIP export and bytecode transparency API.
 
-## 🛠️ Technology Stack
-| Layer | Technology |
-| :--- | :--- |
-| **Framework** | FastAPI |
-| **Server** | Uvicorn |
-| **Database** | SQLite |
-| **ORM** | SQLAlchemy 2.0 |
-| **Validation** | Pydantic V2 |
+### 🛠️ [version-2](https://github.com/mdyasar49/photo-library-service/tree/version-2)
+**"Functional Foundation"**
+- Initial bytecode implementation and basic CRUD operations.
 
-## ⚙️ Installation & Setup
-
-### 1. Environment Preparation
-```bash
-# Clone the repository
-git clone https://github.com/mdyasar49/photo-library-service.git
-cd photo-library-service
-
-# Initialize Virtual Environment
-python -m venv venv
-venv\Scripts\activate   # Windows
-source venv/bin/activate # Unix/macOS
-```
-
-### 2. Dependency Management
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Launch the Server
-```bash
-python app.py
-```
-
-## 📖 API Documentation
-Once the server is running, explore the API endpoints:
-- **Swagger UI**: [http://localhost:5000/docs](http://localhost:5000/docs)
-- **Redoc**: [http://localhost:5000/redoc](http://localhost:5000/redoc)
+### 📜 [version-1](https://github.com/mdyasar49/photo-library-service/tree/version-1)
+**"Legacy Storage"**
+- Standard raw file storage (Deprecated).
 
 ---
-*Developed as part of the Photo Library V2.0 Suite.*
+
+## 🛠️ Setup
+1. `pip install -r requirements.txt`
+2. `python app.py`
+
+---
+*Created by Antigravity - Advanced Agentic Coding*
